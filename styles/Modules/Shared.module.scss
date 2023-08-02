@@ -1,0 +1,63 @@
+@import "../variables.scss";
+
+.defaultButton {
+  border-radius: 0.625rem;
+  height: auto;
+  background: $--primary;
+  color: $--white !important;
+  outline: none;
+  font-family: $--font-poppins;
+  font-weight: $--font-semibold;
+  display: flex;
+  justify-content: center;
+  padding: $--button-padding;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.12s ease-in-out;
+  gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  font-size: .875rem;
+  span,
+  img {
+    z-index: 1;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+    font-weight: $--font-bold;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    content: "";
+    background: $--primary-dark;
+    transition: all 200ms;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.video_responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border-radius: 0.75rem;
+  iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}

@@ -8,10 +8,8 @@ Clone the this github repository
 
 Run
 
-``
-npm install
-npm run dev
-``
+``npm install``
+``npm run dev``
 
 #### Step 3
 

@@ -1,0 +1,30 @@
+@import "../variables.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 0 0;
+  @media screen and (min-width: 768px) {
+    padding: 5.125rem 0 0;
+  }
+
+  .login {
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    color: $--light-gray;
+    font-family: $--font-poppins;
+    transition: all 200ms;
+    &:hover {
+      text-decoration: underline;
+      color: $--primary;
+    }
+    font-weight: $--font-semibold;
+    font-size: 0.875rem;
+    @media screen and (min-width: 768px) {
+      font-size: 1rem;
+      font-weight: $--font-bold;
+    }
+  }
+}
